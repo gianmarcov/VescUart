@@ -10,15 +10,30 @@ class VescUart
 {
 	/** Struct to store the telemetry data returned by the VESC */
 	struct dataPackage {
-		float avgMotorCurrent;
-		float avgInputCurrent;
-		float dutyCycleNow;
-		long rpm;
-		float inpVoltage;
-		float ampHours;
-		float ampHoursCharged;
-		long tachometer;
-		long tachometerAbs;
+		float fetTemp;
+        float motorTemp;
+        float avgMotorCurrent;
+        float avgInputCurrent;
+        float resetAvgId;
+        float resetAvgIq;
+        float dutyCycleNow;
+        float rpm;
+        float inputVoltage;
+        float ampHours;
+        float ampHoursCharged;
+        float wattHours;
+        float wattHoursCharged;
+        int tachometerValue;
+        int tachometerAbsValue;
+        uint fault;
+        float pidPosNow;
+        uint controllerId;
+        float mos1Temp;
+        float mos2Temp;
+        float mos3Temp;
+        float resetAvgVd;
+        float resetAvgVq;
+
 	};
 
 	/** Struct to hold the nunchuck values to send over UART */
