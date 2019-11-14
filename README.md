@@ -1,3 +1,12 @@
+# IMPORTANT NOTE
+### Do no use this code, this repo is forked for me as an example
+
+### this repo is very messy and does not full implement the vesc interface!
+### I invite you to use my new implementation https://github.com/gianmarcov/arduino_vesc it cover all the functionallity of the vesc.
+
+### It's also well documented https://gianmarcov.github.io/arduino_vesc
+
+
 # VescUart
 
 Arduino library for interfacing with a VESC over UART. This library is based upon the library written by RollingGecko (https://github.com/RollingGecko/VescUartControl). The library is updated for the newest VESC firmware (FW3.40) and cleaned up a bit. The library is not backwards compatible, so you have to upload the newest firmware to your VESC.
